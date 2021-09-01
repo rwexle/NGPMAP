@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def render_the_map():
-    return render_template('county_mapv5.html')
+    return render_template('county_mapv6.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
