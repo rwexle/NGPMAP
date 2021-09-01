@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4f47e7602c0d46f3ae9047a5a1967e32 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4f47e7602c0d46f3ae9047a5a1967e32" ></div>
+        
+</body>
+<script>    
+    
+            var map_4f47e7602c0d46f3ae9047a5a1967e32 = L.map(
+                "map_4f47e7602c0d46f3ae9047a5a1967e32",
+                {
+                    center: [40.692943, -73.98588],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    defaultZoomStart: 15,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd503ebdf61a4a81b5da5041ae479d07 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4f47e7602c0d46f3ae9047a5a1967e32);
+        
+    
+            var marker_5a950c7b9ed440d88bd8bbc4060f5658 = L.marker(
+                [42.3602534, -71.0582912],
+                {}
+            ).addTo(map_4f47e7602c0d46f3ae9047a5a1967e32);
+        
+    
+            var icon_42fad6a7f9984107b2a9684f7e5b357e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a950c7b9ed440d88bd8bbc4060f5658.setIcon(icon_42fad6a7f9984107b2a9684f7e5b357e);
+        
+    
+        var popup_510c5f28ccaa4270814c7109e113fc6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7991492ef3ba479c86181bfdc2363c92 = $(`<div id="html_7991492ef3ba479c86181bfdc2363c92" style="width: 100.0%; height: 100.0%;">Welcome to <b> Boston </b></div>`)[0];
+            popup_510c5f28ccaa4270814c7109e113fc6b.setContent(html_7991492ef3ba479c86181bfdc2363c92);
+        
+
+        marker_5a950c7b9ed440d88bd8bbc4060f5658.bindPopup(popup_510c5f28ccaa4270814c7109e113fc6b)
+        ;
+
+        
+    
+    
+            marker_5a950c7b9ed440d88bd8bbc4060f5658.bindTooltip(
+                `<div>
+                     Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cluster_ccea348dce88446abd814471ee35cecc = L.markerClusterGroup(
+                {}
+            );
+            map_4f47e7602c0d46f3ae9047a5a1967e32.addLayer(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+            var marker_12d584de1d9f42c8bf780dfe7e02aa75 = L.marker(
+                [42.3602534, -71.0582912],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_d9443942fcb1463f8aff9961dcb57cd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2c21c48ffc04979b749f09593dd7d8d = $(`<div id="html_f2c21c48ffc04979b749f09593dd7d8d" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1984-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Uniform Printing</b><br>                       <i>Search Length (In Days): </i><b><br>0.0</b><br></div>`)[0];
+            popup_d9443942fcb1463f8aff9961dcb57cd9.setContent(html_f2c21c48ffc04979b749f09593dd7d8d);
+        
+
+        marker_12d584de1d9f42c8bf780dfe7e02aa75.bindPopup(popup_d9443942fcb1463f8aff9961dcb57cd9)
+        ;
+
+        
+    
+    
+            marker_12d584de1d9f42c8bf780dfe7e02aa75.bindTooltip(
+                `<div>
+                     Searchfund: Nova Capital  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1990386a95c249258dcc2d4648e6dbfe = L.marker(
+                [37.4443293, -122.1598465],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_89078fffa5c743878a32112cb45eaf60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48f18bbcb23d43f28ec0d480af478043 = $(`<div id="html_48f18bbcb23d43f28ec0d480af478043" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1985-06-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Alta Colleges, Inc.</b><br>                       <i>Search Length (In Days): </i><b><br>730.0</b><br></div>`)[0];
+            popup_89078fffa5c743878a32112cb45eaf60.setContent(html_48f18bbcb23d43f28ec0d480af478043);
+        
+
+        marker_1990386a95c249258dcc2d4648e6dbfe.bindPopup(popup_89078fffa5c743878a32112cb45eaf60)
+        ;
+
+        
+    
+    
+            marker_1990386a95c249258dcc2d4648e6dbfe.bindTooltip(
+                `<div>
+                     Searchfund: Galena Corp  Harvard University - Harvard Business School<br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ed70fe6cbc74e418f82f35a7887755a = L.marker(
+                [38.8949924, -77.0365581],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_eec6cee82f0b40a4b591a38949485011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8be15f43bc69411393170f1cf18faea8 = $(`<div id="html_8be15f43bc69411393170f1cf18faea8" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1986-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Atlas Container Corporation</b><br>                       <i>Search Length (In Days): </i><b><br>1035.0</b><br></div>`)[0];
+            popup_eec6cee82f0b40a4b591a38949485011.setContent(html_8be15f43bc69411393170f1cf18faea8);
+        
+
+        marker_3ed70fe6cbc74e418f82f35a7887755a.bindPopup(popup_eec6cee82f0b40a4b591a38949485011)
+        ;
+
+        
+    
+    
+            marker_3ed70fe6cbc74e418f82f35a7887755a.bindTooltip(
+                `<div>
+                     Searchfund: Hanover West  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fa716c441464088bef0aa88769ef728 = L.marker(
+                [37.4265407, -122.17029258409188],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_645b03f425c14d018ce1d9bd9a482cbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1284865961694a4fbba83eb01401c809 = $(`<div id="html_1284865961694a4fbba83eb01401c809" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1987-06-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Smith Alarm Systems</b><br>                       <i>Search Length (In Days): </i><b><br>580.0</b><br></div>`)[0];
+            popup_645b03f425c14d018ce1d9bd9a482cbe.setContent(html_1284865961694a4fbba83eb01401c809);
+        
+
+        marker_6fa716c441464088bef0aa88769ef728.bindPopup(popup_645b03f425c14d018ce1d9bd9a482cbe)
+        ;
+
+        
+    
+    
+            marker_6fa716c441464088bef0aa88769ef728.bindTooltip(
+                `<div>
+                     Searchfund: David Dodson - 1st Fund  Stanford University - Graduate School of Business<br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12446315dc9a41f9944a200bc7850624 = L.marker(
+                [37.4863239, -122.232523],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_f4f9c532bdec4d9d913dc009175a93d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2a41cf478a944f8adac33a4bad8b5c9 = $(`<div id="html_d2a41cf478a944f8adac33a4bad8b5c9" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1991-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Western Cable Systems</b><br>                       <i>Search Length (In Days): </i><b><br>0.0</b><br></div>`)[0];
+            popup_f4f9c532bdec4d9d913dc009175a93d1.setContent(html_d2a41cf478a944f8adac33a4bad8b5c9);
+        
+
+        marker_12446315dc9a41f9944a200bc7850624.bindPopup(popup_f4f9c532bdec4d9d913dc009175a93d1)
+        ;
+
+        
+    
+    
+            marker_12446315dc9a41f9944a200bc7850624.bindTooltip(
+                `<div>
+                     Searchfund: Balkin Corp  Stanford University<br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_312d7362d6a74a139c71d14344beb1ab = L.marker(
+                [37.4443293, -122.1598465],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_a8174c85490a4b088a8bd09b095ef106 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e6ed8c1f1064b0099eabf181dac4bb8 = $(`<div id="html_6e6ed8c1f1064b0099eabf181dac4bb8" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1990-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Med-Mart now known as Pacific Pulmonary Services</b><br>                       <i>Search Length (In Days): </i><b><br>1096.0</b><br></div>`)[0];
+            popup_a8174c85490a4b088a8bd09b095ef106.setContent(html_6e6ed8c1f1064b0099eabf181dac4bb8);
+        
+
+        marker_312d7362d6a74a139c71d14344beb1ab.bindPopup(popup_a8174c85490a4b088a8bd09b095ef106)
+        ;
+
+        
+    
+    
+            marker_312d7362d6a74a139c71d14344beb1ab.bindTooltip(
+                `<div>
+                     Searchfund: Braden Partners  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e87077d282140b6a0695203c700dce7 = L.marker(
+                [37.7790262, -122.419906],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_9411cb748f1945bba11458ae0541f049 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_111bef8400ca431d9f782601f13ba3a0 = $(`<div id="html_111bef8400ca431d9f782601f13ba3a0" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1993-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Cameraworld.com</b><br>                       <i>Search Length (In Days): </i><b><br>365.0</b><br></div>`)[0];
+            popup_9411cb748f1945bba11458ae0541f049.setContent(html_111bef8400ca431d9f782601f13ba3a0);
+        
+
+        marker_3e87077d282140b6a0695203c700dce7.bindPopup(popup_9411cb748f1945bba11458ae0541f049)
+        ;
+
+        
+    
+    
+            marker_3e87077d282140b6a0695203c700dce7.bindTooltip(
+                `<div>
+                     Searchfund: Sverica International  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9762d2d0c73f4619bd19709f81133229 = L.marker(
+                [43.6534817, -79.3839347],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_fa4e470c579d46c39f8c3c6397eb15de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c85e63a1216c4b64998de7fed2d9a5b5 = $(`<div id="html_c85e63a1216c4b64998de7fed2d9a5b5" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1993-03-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Chapters Inc (formed from buyouts of SmithBooks in 1994 and Coles in 1995 (Canada’s two largest book retailers)</b><br>                       <i>Search Length (In Days): </i><b><br>306.0</b><br></div>`)[0];
+            popup_fa4e470c579d46c39f8c3c6397eb15de.setContent(html_c85e63a1216c4b64998de7fed2d9a5b5);
+        
+
+        marker_9762d2d0c73f4619bd19709f81133229.bindPopup(popup_fa4e470c579d46c39f8c3c6397eb15de)
+        ;
+
+        
+    
+    
+            marker_9762d2d0c73f4619bd19709f81133229.bindTooltip(
+                `<div>
+                     Searchfund: Pathfinder Capital  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63c48cefd1f54a0b9bdfc23049ce7496 = L.marker(
+                [34.1866193, -118.4486669],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_7015393e921d4833925c97acbf65031f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e701726deca4ec0897d3581ff9b7e72 = $(`<div id="html_7e701726deca4ec0897d3581ff9b7e72" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1993-06-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Terry Hinge & Hardware, dba Terry Industrial</b><br>                       <i>Search Length (In Days): </i><b><br>214.0</b><br></div>`)[0];
+            popup_7015393e921d4833925c97acbf65031f.setContent(html_7e701726deca4ec0897d3581ff9b7e72);
+        
+
+        marker_63c48cefd1f54a0b9bdfc23049ce7496.bindPopup(popup_7015393e921d4833925c97acbf65031f)
+        ;
+
+        
+    
+    
+            marker_63c48cefd1f54a0b9bdfc23049ce7496.bindTooltip(
+                `<div>
+                     Searchfund: Amersham Corp.  Harvard University - Harvard Business School<br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfe0bb9ed6d049ce9fd74c86e181f620 = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_352b718b36874f75b7e59434dda9c3d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6b5765c8b564c5c86c479b5cab84941 = $(`<div id="html_c6b5765c8b564c5c86c479b5cab84941" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1991-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>RSL</b><br>                       <i>Search Length (In Days): </i><b><br>1096.0</b><br></div>`)[0];
+            popup_352b718b36874f75b7e59434dda9c3d7.setContent(html_c6b5765c8b564c5c86c479b5cab84941);
+        
+
+        marker_bfe0bb9ed6d049ce9fd74c86e181f620.bindPopup(popup_352b718b36874f75b7e59434dda9c3d7)
+        ;
+
+        
+    
+    
+            marker_bfe0bb9ed6d049ce9fd74c86e181f620.bindTooltip(
+                `<div>
+                     Searchfund: Simon Webster Search Fund  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17af943d4b424fd59ba814e34c0b9cc1 = L.marker(
+                [37.4265407, -122.17029258409188],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_7141f5e3655c4a31a13ef7130e3142c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_639d6160d2bb4edca289dba087344ce2 = $(`<div id="html_639d6160d2bb4edca289dba087344ce2" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1993-01-06</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>ADAP, Inc</b><br>                       <i>Search Length (In Days): </i><b><br>730.0</b><br></div>`)[0];
+            popup_7141f5e3655c4a31a13ef7130e3142c9.setContent(html_639d6160d2bb4edca289dba087344ce2);
+        
+
+        marker_17af943d4b424fd59ba814e34c0b9cc1.bindPopup(popup_7141f5e3655c4a31a13ef7130e3142c9)
+        ;
+
+        
+    
+    
+            marker_17af943d4b424fd59ba814e34c0b9cc1.bindTooltip(
+                `<div>
+                     Searchfund: Falcon Capital Corp. <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45fdd37cf56844eea93d469bc6ce3c35 = L.marker(
+                [37.4443293, -122.1598465],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_f84d0893698947a898294650825057c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e2848d94686486eb7ca6d702c02158a = $(`<div id="html_7e2848d94686486eb7ca6d702c02158a" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1994-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Road Rescue Inc. (now Asurion)</b><br>                       <i>Search Length (In Days): </i><b><br>546.0</b><br></div>`)[0];
+            popup_f84d0893698947a898294650825057c9.setContent(html_7e2848d94686486eb7ca6d702c02158a);
+        
+
+        marker_45fdd37cf56844eea93d469bc6ce3c35.bindPopup(popup_f84d0893698947a898294650825057c9)
+        ;
+
+        
+    
+    
+            marker_45fdd37cf56844eea93d469bc6ce3c35.bindTooltip(
+                `<div>
+                     Searchfund: Mill River Corporation <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3434a93e57dd4ef5a4cea250c507d0e9 = L.marker(
+                [37.4443293, -122.1598465],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_9269c1371f1449e8915678ea37230c20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cafa7df26c2e4ebf903cf70ad180d60f = $(`<div id="html_cafa7df26c2e4ebf903cf70ad180d60f" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1995-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Hudson Bend Corp.</b><br>                       <i>Search Length (In Days): </i><b><br>365.0</b><br></div>`)[0];
+            popup_9269c1371f1449e8915678ea37230c20.setContent(html_cafa7df26c2e4ebf903cf70ad180d60f);
+        
+
+        marker_3434a93e57dd4ef5a4cea250c507d0e9.bindPopup(popup_9269c1371f1449e8915678ea37230c20)
+        ;
+
+        
+    
+    
+            marker_3434a93e57dd4ef5a4cea250c507d0e9.bindTooltip(
+                `<div>
+                     Searchfund: Gene Baker Search Fund  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e8fb2b121634793b1af67f81f0e77bb = L.marker(
+                [37.4443293, -122.1598465],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_56e81e2a5e9c4d14b73253dbfa724a03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90af03f77ad0498d84706a57143e9682 = $(`<div id="html_90af03f77ad0498d84706a57143e9682" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1991-09-09</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Carillon Assisted Living</b><br>                       <i>Search Length (In Days): </i><b><br>1575.0</b><br></div>`)[0];
+            popup_56e81e2a5e9c4d14b73253dbfa724a03.setContent(html_90af03f77ad0498d84706a57143e9682);
+        
+
+        marker_6e8fb2b121634793b1af67f81f0e77bb.bindPopup(popup_56e81e2a5e9c4d14b73253dbfa724a03)
+        ;
+
+        
+    
+    
+            marker_6e8fb2b121634793b1af67f81f0e77bb.bindTooltip(
+                `<div>
+                     Searchfund: Sansair Corporation  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddbd4ac0d37449d1b51dae89b4914988 = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_3bf20883ab2b4e95a77b3d019d466bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22abddc1bc2a4a49bb96c62e2b25289b = $(`<div id="html_22abddc1bc2a4a49bb96c62e2b25289b" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1994-04-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Classic Party Rentals, Inc. (formerly Event Rentals, Inc)</b><br>                       <i>Search Length (In Days): </i><b><br>640.0</b><br></div>`)[0];
+            popup_3bf20883ab2b4e95a77b3d019d466bb8.setContent(html_22abddc1bc2a4a49bb96c62e2b25289b);
+        
+
+        marker_ddbd4ac0d37449d1b51dae89b4914988.bindPopup(popup_3bf20883ab2b4e95a77b3d019d466bb8)
+        ;
+
+        
+    
+    
+            marker_ddbd4ac0d37449d1b51dae89b4914988.bindTooltip(
+                `<div>
+                     Searchfund: Redwood Partners, Inc.  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6bdd7026566473385de29c1a043d7e1 = L.marker(
+                [40.7596198, -111.8867975],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_5d319af8901f4cc29c00c6ffa217ffe4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2c05698c038472c84adbadb51190039 = $(`<div id="html_c2c05698c038472c84adbadb51190039" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1995-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>retail stores</b><br>                       <i>Search Length (In Days): </i><b><br>731.0</b><br></div>`)[0];
+            popup_5d319af8901f4cc29c00c6ffa217ffe4.setContent(html_c2c05698c038472c84adbadb51190039);
+        
+
+        marker_f6bdd7026566473385de29c1a043d7e1.bindPopup(popup_5d319af8901f4cc29c00c6ffa217ffe4)
+        ;
+
+        
+    
+    
+            marker_f6bdd7026566473385de29c1a043d7e1.bindTooltip(
+                `<div>
+                     Searchfund: The Nexus Group  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5823ac1cbb9841ddbca43aeae9bf56ab = L.marker(
+                [40.7596198, -111.8867975],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_828588bbf6014da29107653de37c6476 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0e8e3002814455f92dcb41072d64966 = $(`<div id="html_b0e8e3002814455f92dcb41072d64966" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1996-10-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>US Shred</b><br>                       <i>Search Length (In Days): </i><b><br>457.0</b><br></div>`)[0];
+            popup_828588bbf6014da29107653de37c6476.setContent(html_b0e8e3002814455f92dcb41072d64966);
+        
+
+        marker_5823ac1cbb9841ddbca43aeae9bf56ab.bindPopup(popup_828588bbf6014da29107653de37c6476)
+        ;
+
+        
+    
+    
+            marker_5823ac1cbb9841ddbca43aeae9bf56ab.bindTooltip(
+                `<div>
+                     Searchfund: Russell Poore  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_221020f4209b492d954b17870bc13a20 = L.marker(
+                [37.7790262, -122.419906],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_2e7f9daa338c46e282e223f6f231b99a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89f4a424553945adab279aa973f5449d = $(`<div id="html_89f4a424553945adab279aa973f5449d" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1996-06-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Clear Creek Environmental</b><br>                       <i>Search Length (In Days): </i><b><br>579.0</b><br></div>`)[0];
+            popup_2e7f9daa338c46e282e223f6f231b99a.setContent(html_89f4a424553945adab279aa973f5449d);
+        
+
+        marker_221020f4209b492d954b17870bc13a20.bindPopup(popup_2e7f9daa338c46e282e223f6f231b99a)
+        ;
+
+        
+    
+    
+            marker_221020f4209b492d954b17870bc13a20.bindTooltip(
+                `<div>
+                     Searchfund: Presidio Partners  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_410586e1880840a9848be06d54c80a0e = L.marker(
+                [32.753177, -97.3327459],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_a5744fd62d0e40be85a63929b8ad24cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e20d319f2ed44cb4af25323a5d7a7cd8 = $(`<div id="html_e20d319f2ed44cb4af25323a5d7a7cd8" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>nan</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Mastercraft Homes</b><br>                       <i>Search Length (In Days): </i><b><br>nan</b><br></div>`)[0];
+            popup_a5744fd62d0e40be85a63929b8ad24cb.setContent(html_e20d319f2ed44cb4af25323a5d7a7cd8);
+        
+
+        marker_410586e1880840a9848be06d54c80a0e.bindPopup(popup_a5744fd62d0e40be85a63929b8ad24cb)
+        ;
+
+        
+    
+    
+            marker_410586e1880840a9848be06d54c80a0e.bindTooltip(
+                `<div>
+                     Searchfund: Jim Southern Search Fund 2  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2d5ce9c4b75421b91f1e3e7f27ad207 = L.marker(
+                [37.496904, -122.3330573],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_2a9bbb0007c84a7abbc902360319b8ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09e7c85f217541588f3d105e02b60a5f = $(`<div id="html_09e7c85f217541588f3d105e02b60a5f" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1997-01-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>ANCORA PRESORT PARTNERS</b><br>                       <i>Search Length (In Days): </i><b><br>365.0</b><br></div>`)[0];
+            popup_2a9bbb0007c84a7abbc902360319b8ce.setContent(html_09e7c85f217541588f3d105e02b60a5f);
+        
+
+        marker_e2d5ce9c4b75421b91f1e3e7f27ad207.bindPopup(popup_2a9bbb0007c84a7abbc902360319b8ce)
+        ;
+
+        
+    
+    
+            marker_e2d5ce9c4b75421b91f1e3e7f27ad207.bindTooltip(
+                `<div>
+                     Searchfund: Ancora Capital <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06ce3baec52c458c957287f9ca9606f1 = L.marker(
+                [29.424473, -94.693869],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_e83109ac3b134cd2bf36183c902767d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d9ff3b193e94cbd86e6e97a9f5db4da = $(`<div id="html_4d9ff3b193e94cbd86e6e97a9f5db4da" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>2012-06-06</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Hammerman & Gainer, Inc.</b><br>                       <i>Search Length (In Days): </i><b><br>nan</b><br></div>`)[0];
+            popup_e83109ac3b134cd2bf36183c902767d1.setContent(html_4d9ff3b193e94cbd86e6e97a9f5db4da);
+        
+
+        marker_06ce3baec52c458c957287f9ca9606f1.bindPopup(popup_e83109ac3b134cd2bf36183c902767d1)
+        ;
+
+        
+    
+    
+            marker_06ce3baec52c458c957287f9ca9606f1.bindTooltip(
+                `<div>
+                     Searchfund: Gulf Search Capital  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b79cf25801724898b68a1b060937c5d8 = L.marker(
+                [42.3602534, -71.0582912],
+                {}
+            ).addTo(marker_cluster_ccea348dce88446abd814471ee35cecc);
+        
+    
+        var popup_5a0c6b2e0bd94b669fb791bcd75eba8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba759d68b8eb4566a284d19ea5d84b0d = $(`<div id="html_ba759d68b8eb4566a284d19ea5d84b0d" style="width: 100.0%; height: 100.0%;">                       <i>Date Formed: </i> <br> <b>1997-06-01</b> <br>                        <i>Company Acquired (If Applicable): </i><b><br>Syntec Custom Injection Molders (now Syntec Optics)</b><br>                       <i>Search Length (In Days): </i><b><br>610.0</b><br></div>`)[0];
+            popup_5a0c6b2e0bd94b669fb791bcd75eba8d.setContent(html_ba759d68b8eb4566a284d19ea5d84b0d);
+        
+
+        marker_b79cf25801724898b68a1b060937c5d8.bindPopup(popup_5a0c6b2e0bd94b669fb791bcd75eba8d)
+        ;
+
+        
+    
+    
+            marker_b79cf25801724898b68a1b060937c5d8.bindTooltip(
+                `<div>
+                     Searchfund: Al Kapoor - Search Fund  <br> Current Status: Acquired<br> Click for more
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
