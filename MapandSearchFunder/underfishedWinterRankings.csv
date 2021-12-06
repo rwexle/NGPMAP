@@ -1,0 +1,27 @@
+﻿MSA,New Rank,Searchers,Search Rank,Acquisitions,Acq Rank,Total Searchers + Acq,Total Univ + F500,Underfishing Ratio (Smaller ratio is better; Less transactions per univ+f500),Underfishing ratio rank,Underfishing Total Rank,CSAFP,CBSAFP,GEOID,NAME,NAMELSAD,LSAD,MEMI,MTFCC,ALAND,AWATER,INTPTLAT,INTPTLON
+"Chattanooga, TN-GA MSA",42,0,16,0,19,0,17,0,14,1,174,16860,16860,"Chattanooga, TN-GA","Chattanooga, TN-GA Metro Area",M1,1,G3110,5409949984,126699774,35,-85
+"Des Moines-West Des Moines, IA MSA",33,0,16,0,19,0,15,0,14,2,218,19780,19780,"Des Moines-West Des Moines, IA","Des Moines-West Des Moines, IA Metro Area",M1,1,G3110,9356047019,83572521,42,-94
+"Lincoln, NE MSA",45,0,16,0,19,0,11,0,14,3,339,30700,30700,"Lincoln, NE","Lincoln, NE Metro Area",M1,1,G3110,3649268662,34389571,41,-97
+"Sioux Falls, SD MSA",13,0,16,0,19,0,10,0,14,4,,43620,43620,"Sioux Falls, SD","Sioux Falls, SD Metro Area",M1,1,G3110,6670256892,27900457,43,-096.9953387
+"Asheville, NC MSA",41,0,16,0,19,0,9,0,14,5,120,11700,11700,"Asheville, NC","Asheville, NC Metro Area",M1,1,G3110,5264465453,21752837,36,-082.6816145
+"Fayetteville, NC MSA",39,0,16,0,19,0,8,0,14,6,246,22180,22180,"Fayetteville, NC","Fayetteville, NC Metro Area",M1,1,G3110,4241473864,35581071,35,-078.9318557
+"Deltona-Daytona Beach-Ormond Beach, FL MSA",49,0,16,0,19,0,8,0,14,7,422,19660,19660,"Deltona-Daytona Beach-Ormond Beach, FL","Deltona-Daytona Beach-Ormond Beach, FL Metro Area",M1,1,G3110,4111637369,1076797418,29,-081.1890231
+"Fargo, ND-MN MSA",34,0,16,0,19,0,5,0,14,8,244,22020,22020,"Fargo, ND-MN","Fargo, ND-MN Metro Area",M1,1,G3110,7278152547,26752592,47,-096.9601826
+"Fort Collins, CO MSA",35,0,16,0,19,0,5,0,14,9,,22660,22660,"Fort Collins, CO","Fort Collins, CO Metro Area",M1,1,G3110,6723017943,98980718,41,-105.4867638
+"Odessa, TX MSA",38,0,16,0,19,0,3,0,14,10,372,36220,36220,"Odessa, TX","Odessa, TX Metro Area",M1,1,G3110,2325442220,10255211,32,-102.5425068
+"Bellingham, WA MSA",43,0,16,0,19,0,4,0,14,11,,13380,13380,"Bellingham, WA","Bellingham, WA Metro Area",M1,1,G3110,5459483486,1028111662,49,-121.8364325
+"Crestview-Fort Walton Beach-Destin, FL MSA",47,0,16,0,19,0,3,0,14,12,,18880,18880,"Crestview-Fort Walton Beach-Destin, FL","Crestview-Fort Walton Beach-Destin, FL Metro Area",M1,1,G3110,5097500586,1781864498,31,-086.3581638
+"Bend, OR MSA",48,0,16,0,19,0,3,0,14,13,140,13460,13460,"Bend, OR","Bend, OR Metro Area",M1,1,G3110,7815593157,94707741,44,-121.2255751
+"Greenville, NC MSA",50,0,16,0,19,0,3,0,14,14,272,24780,24780,"Greenville, NC","Greenville, NC Metro Area",M1,1,G3110,1689620170,8247778,36,-077.3727387
+"Madison, WI MSA",30,0,16,1,25,1,14,0.071428571,15,15,357,31540,31540,"Madison, WI","Madison, WI Metro Area",M1,1,G3110,8569702439,200235647,43,-089.5977453
+"Fort Wayne, IN MSA",44,1,20,0,19,1,11,0.090909091,16,16,258,23060,23060,"Fort Wayne, IN","Fort Wayne, IN Metro Area",M1,1,G3110,2571518283,13130160,41,-085.2177052
+"Indianapolis-Carmel-Anderson, IN MSA",20,4,30,0,19,4,39,0.102564103,17,17,294,26900,26900,"Indianapolis-Carmel-Anderson, IN","Indianapolis-Carmel-Anderson, IN Metro Area",M1,1,G3110,11153926538,88449263,40,-086.2123823
+"Las Vegas-Henderson-Paradise, NV MSA",28,2,26,1,25,3,28,0.107142857,18,18,332,29820,29820,"Las Vegas-Henderson-Paradise, NV","Las Vegas-Henderson-Paradise, NV Metro Area",M1,1,G3110,20439308565,438384090,36,-115.0143977
+"Lexington-Fayette, KY MSA",37,2,26,0,19,2,16,0.125,20,19,336,30460,30460,"Lexington-Fayette, KY","Lexington-Fayette, KY Metro Area",M1,1,G3110,3807095598,37135548,38,-084.4385451
+"Reno, NV MSA",46,1,20,0,19,1,8,0.125,20,20,456,39900,39900,"Reno, NV","Reno, NV Metro Area",M1,1,G3110,17041227033,584619444,41,-119.7311608
+"Jacksonville, FL MSA",28,3,28,2,27,5,33,0.151515152,21,21,300,27260,27260,"Jacksonville, FL","Jacksonville, FL Metro Area",M1,1,G3110,8292632119,1286263467,30,-081.7544462
+"Naples-Marco Island, FL MSA",18,1,20,0,19,1,6,0.166666667,22,22,163,34940,34940,"Naples-Marco Island, FL","Naples-Marco Island, FL Metro Area",M1,1,G3110,5171818340,1575203628,26,-081.4009553
+"San Antonio-New Braunfels, TX MSA",8,4,30,3,32,7,40,0.175,23,23,484,41700,41700,"San Antonio-New Braunfels, TX","San Antonio-New Braunfels, TX Metro Area",M1,1,G3110,18941072991,149365695,29,-098.6069734
+"Orlando-Kissimmee-Sanford, FL MSA",10,5,32,4,35,9,47,0.191489362,24,24,422,36740,36740,"Orlando-Kissimmee-Sanford, FL","Orlando-Kissimmee-Sanford, FL Metro Area",M1,1,G3110,9043108363,1346663705,28,-081.3560839
+"Kansas City, MO-KS MSA",31,9,35,3,32,12,56,0.214285714,25,25,312,28140,28140,"Kansas City, MO-KS","Kansas City, MO-KS Metro Area",M1,1,G3110,18794256913,301313287,39,-094.4438406
+,,,,,,,,,,,,,,,,,,,,,,
